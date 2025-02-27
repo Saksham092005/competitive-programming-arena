@@ -1,0 +1,131 @@
+/* Common styles for CP Arena */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #f8f9fa, #afc6dd);
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #24292e;
+    padding: 15px 20px;
+}
+
+.navbar .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 16px;
+}
+
+/* Button styles */
+.btn {
+    background-color: rgb(54, 211, 153);
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: rgb(40, 175, 125);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    color: rgb(12, 12, 12)
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background-color: rgb(54, 211, 153);
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 18px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: rgb(40, 175, 125);
+}
+
+/* Form Section */
+.form-section {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #f0f4f8;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    color: #222;
+}
+
+.form-section h2 {
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form button {
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #24292e;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
