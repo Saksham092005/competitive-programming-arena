@@ -1,0 +1,182 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to right, #f8f9fa, #afc6dd);
+    color: #333;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #24292e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+  .navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .discovery-active {
+    border-bottom: 2px solid #00b894;
+  }
+  .sign-up-btn {
+    background-color: #00b894;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    color: #fff;
+  }
+  
+  /* Main Discovery Section */
+  .discovery-section {
+    padding: 2rem;
+    min-height: 80vh;
+  }
+  
+  /* Filter Panel */
+  .filter-panel {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .filter-panel h1 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+  .filter-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    align-items: end;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-group label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .form-group input,
+  .form-group select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .filter-btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .filter-btn:hover {
+    background-color: #2d80b7;
+  }
+  
+  /* Problem List */
+  .problem-list {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .problem-list h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  .problem-list table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .problem-list th,
+  .problem-list td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  .problem-list th {
+    background: #f0f0f0;
+  }
+  .problem-list a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  .problem-list a:hover {
+    text-decoration: underline;
+  }
+  .status {
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+  .solved {
+    background-color: #c6e48b;
+    color: #2d6a2b;
+  }
+  .unsolved {
+    background-color: #f0ad4e;
+    color: #a84300;
+  }
+  
+  /* Personal Performance History */
+  .personal-history {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .personal-history h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  .history-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+  .history-card {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+  .history-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+  .history-card p {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 1rem;
+    color: #fff;
+    font-size: 0.9rem;
+  }
+  

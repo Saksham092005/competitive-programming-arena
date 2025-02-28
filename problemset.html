@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CP Arena - Problem Discovery</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="problemset.css" />
+</head>
+<body>
+  <!-- HEADER / NAVBAR -->
+  <header class="navbar">
+    <div class="navbar-brand">CP Arena</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contests</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#" class="discovery-active">Problem Discovery</a></li>
+        <li><a href="#" class="sign-up-btn">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="discovery-section">
+    <!-- Filter Panel -->
+    <section class="filter-panel">
+      <h1>Discover Problems</h1>
+      <form class="filter-form">
+        <div class="form-group">
+          <label for="difficulty">Difficulty</label>
+          <select id="difficulty" name="difficulty">
+            <option value="">All</option>
+            <option value="800">800 - 1200</option>
+            <option value="1200">1200 - 1600</option>
+            <option value="1600">1600 - 2000</option>
+            <option value="2000">2000 - 2400</option>
+            <option value="2400">2400+</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="tags">Tags</label>
+          <input type="text" id="tags" name="tags" placeholder="e.g. dp, graph, greedy" />
+        </div>
+        <div class="form-group">
+          <label for="performance">Performance History</label>
+          <select id="performance" name="performance">
+            <option value="">All Topics</option>
+            <option value="dp">Dynamic Programming</option>
+            <option value="graphs">Graphs</option>
+            <option value="math">Mathematics</option>
+            <option value="greedy">Greedy</option>
+          </select>
+        </div>
+        <button type="submit" class="filter-btn">Filter</button>
+      </form>
+    </section>
+
+    <!-- Problem List -->
+    <section class="problem-list">
+      <h2>Available Problems</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Problem Name</th>
+            <th>Difficulty</th>
+            <th>Tags</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href="https://codeforces.com/problemset/problem/1/A" target="_blank">
+                A. Theatre Square
+              </a>
+            </td>
+            <td>800</td>
+            <td>math, implementation</td>
+            <td><span class="status unsolved">Unsolved</span></td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://codeforces.com/problemset/problem/2/B" target="_blank">
+                B. The Problem Name
+              </a>
+            </td>
+            <td>1200</td>
+            <td>dp, greedy</td>
+            <td><span class="status solved">Solved</span></td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://codeforces.com/problemset/problem/3/C" target="_blank">
+                C. Another Problem
+              </a>
+            </td>
+            <td>1600</td>
+            <td>graphs, trees</td>
+            <td><span class="status unsolved">Unsolved</span></td>
+          </tr>
+          <!-- Additional rows will be dynamically populated -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Personal Performance History -->
+    <section class="personal-history">
+      <h2>Your Performance History</h2>
+      <div class="history-summary">
+        <div class="history-card">
+          <h3>Dynamic Programming</h3>
+          <p>Solved: 45 / 60</p>
+        </div>
+        <div class="history-card">
+          <h3>Graphs</h3>
+          <p>Solved: 30 / 50</p>
+        </div>
+        <div class="history-card">
+          <h3>Mathematics</h3>
+          <p>Solved: 55 / 70</p>
+        </div>
+        <div class="history-card">
+          <h3>Greedy</h3>
+          <p>Solved: 20 / 40</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 CP Arena. All rights reserved.</p>
+  </footer>
+</body>
+</html>
