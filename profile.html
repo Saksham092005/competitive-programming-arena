@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CP Arena - Profile</title>
+
+  <!-- Example Google Font (Optional) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+
+  <!-- Link to external CSS (or you can place CSS in <style> tag below) -->
+  <link rel="stylesheet" href="profile.css" />
+</head>
+<body>
+  <!-- HEADER / NAVBAR -->
+  <header class="navbar">
+    <div class="navbar-brand">CP Arena</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contests</a></li>
+        <li><a href="#">Sign In</a></li>
+        <li><a href="#" class="sign-up-btn">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="profile-section">
+    <!-- Profile Card -->
+    <section class="profile-card">
+      <div class="profile-avatar">
+        <!-- Placeholder avatar; replace with user’s actual avatar -->
+        <img src="https://via.placeholder.com/150" alt="User Avatar" />
+      </div>
+      <div class="profile-info">
+        <h1 class="profile-username">John Doe</h1>
+        <p class="profile-rank">Current Rank: <span>1234</span></p>
+        <p class="profile-rating">Rating: <span>1500</span></p>
+      </div>
+    </section>
+
+    <!-- Performance & Analytics -->
+    <section class="profile-stats">
+      <h2>Performance Overview</h2>
+      <div class="stats-grid">
+        <div class="stat-box">
+          <h3>Total Contests</h3>
+          <p>25</p>
+        </div>
+        <div class="stat-box">
+          <h3>Problems Solved</h3>
+          <p>150</p>
+        </div>
+        <div class="stat-box">
+          <h3>Best Rank</h3>
+          <p>57</p>
+        </div>
+        <div class="stat-box">
+          <h3>Friends Beat</h3>
+          <p>12</p>
+        </div>
+      </div>
+      <!-- Placeholder area for an Analytics Chart (e.g., using Chart.js) -->
+      <div class="chart-placeholder">
+        <p>Chart/Graph Placeholder</p>
+      </div>
+    </section>
+
+    <!-- Contest History -->
+    <section class="contest-history">
+      <h2>Recent Contests</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Contest Name</th>
+            <th>Position</th>
+            <th>Score</th>
+            <th>Penalty</th>
+            <th>Rating Change</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ABC #100</td>
+            <td>12</td>
+            <td>4</td>
+            <td>20</td>
+            <td>+10</td>
+          </tr>
+          <tr>
+            <td>XYZ #50</td>
+            <td>45</td>
+            <td>3</td>
+            <td>30</td>
+            <td>-5</td>
+          </tr>
+          <tr>
+            <td>Beta Round #22</td>
+            <td>9</td>
+            <td>5</td>
+            <td>10</td>
+            <td>+15</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 CP Arena. All rights reserved.</p>
+  </footer>
+</body>
+</html>
