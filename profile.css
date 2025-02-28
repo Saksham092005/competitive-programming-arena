@@ -8,7 +8,6 @@
     font-family: 'Inter', sans-serif;
     background: linear-gradient(to right, #f8f9fa, #afc6dd); 
     color: #333;
-
   }
   
   /* Navbar */
@@ -43,7 +42,6 @@
   
   /* Main Profile Section */
   .profile-section {
-    /* Optional subtle gradient (left to right) */
     background: linear-gradient(to right, #f8f9fa, #afc6dd); 
     min-height: 80vh;
     padding: 2rem;
@@ -128,6 +126,50 @@
     font-style: italic;
   }
   
+  /* Streak Tracker */
+  .streak-tracker {
+    background: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  .streak-tracker h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .streak-tracker p {
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    color: #555;
+  }
+  .heatmap {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+  }
+  .day {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    background-color: #ebedf0; /* Default for intensity-0 */
+    cursor: pointer;
+  }
+  .intensity-0 {
+    background-color: #ebedf0;
+  }
+  .intensity-1 {
+    background-color: #c6e48b;
+  }
+  .intensity-2 {
+    background-color: #7bc96f;
+  }
+  .intensity-3 {
+    background-color: #239a3b;
+  }
+  .intensity-4 {
+    background-color: #196127;
+  }
+  
   /* Contest History */
   .contest-history {
     background: #fff;
@@ -162,4 +204,5 @@
     color: #fff;
     font-size: 0.9rem;
   }
+  
   
