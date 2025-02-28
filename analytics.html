@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CP Arena - Analytics Dashboard</title>
+
+  <!-- Example Google Font (Optional) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+
+  <!-- Link to external CSS (or place CSS in <style> tag below) -->
+  <link rel="stylesheet" href="analytics.css" />
+</head>
+<body>
+  <!-- HEADER / NAVBAR -->
+  <header class="navbar">
+    <div class="navbar-brand">CP Arena</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contests</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#" class="sign-up-btn">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="analytics-section">
+    <h1>Analytics Dashboard</h1>
+
+    <!-- Performance Trends -->
+    <section class="analytics-card">
+      <h2>Performance Trends</h2>
+      <div class="chart-container">
+        <!-- Replace with a real chart (e.g., line chart of rating changes) -->
+        <canvas id="performanceTrendChart" width="400" height="200">
+          <!-- Fallback text for older browsers -->
+          Your browser does not support HTML canvas.
+        </canvas>
+      </div>
+    </section>
+
+    <!-- Weak Topics -->
+    <section class="analytics-card">
+      <h2>Weak Topics</h2>
+      <div class="chart-container">
+        <!-- Replace with a real chart (e.g., radar chart or bar chart) -->
+        <canvas id="weakTopicsChart" width="400" height="200">
+          Your browser does not support HTML canvas.
+        </canvas>
+      </div>
+      <div class="weak-topics-list">
+        <h3>Suggested Practice Topics:</h3>
+        <ul>
+          <li>Dynamic Programming (DP)</li>
+          <li>Graphs</li>
+          <li>Binary Search</li>
+          <li>Combinatorics</li>
+          <!-- etc. Dynamically populate based on user data -->
+        </ul>
+      </div>
+    </section>
+
+    <!-- Progress Tracking -->
+    <section class="analytics-card">
+      <h2>Progress Tracking</h2>
+      <div class="progress-grid">
+        <div class="progress-box">
+          <h3>Problems Solved</h3>
+          <p>200</p>
+        </div>
+        <div class="progress-box">
+          <h3>Contests Participated</h3>
+          <p>35</p>
+        </div>
+        <div class="progress-box">
+          <h3>Average Rank</h3>
+          <p>250</p>
+        </div>
+        <div class="progress-box">
+          <h3>Overall Rating</h3>
+          <p>1650</p>
+        </div>
+      </div>
+      <!-- Another chart or timeline for daily/weekly progress -->
+      <div class="chart-container">
+        <canvas id="progressTimelineChart" width="400" height="200">
+          Your browser does not support HTML canvas.
+        </canvas>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 CP Arena. All rights reserved.</p>
+  </footer>
+
+  
+</body>
+</html>

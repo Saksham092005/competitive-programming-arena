@@ -1,0 +1,193 @@
+/* Basic reset & font setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to right, #f8f9fa, #afc6dd); 
+    color: #333;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #1f1f1f; /* Dark header */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+  .navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .sign-up-btn {
+    background-color: #00b894; /* Green accent */
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    color: #fff;
+  }
+  
+  /* Main Contest Creation Section */
+  .contest-creation-section {
+    /* Optional subtle gradient (left to right) */
+    background: linear-gradient(to right, #f8f9fa, #afc6dd); 
+    min-height: 80vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  /* Creation Form */
+  .creation-form-wrapper {
+    background: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  .creation-form-wrapper h1 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  .contest-creation-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 1.5rem;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-group label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .form-group input,
+  .form-group select {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  .toggle-group {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .toggle-options {
+    display: flex;
+    gap: 1rem;
+  }
+  .create-btn {
+    background-color: #00b894;
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 1rem;
+  }
+  .create-btn:hover {
+    background-color: #019373;
+  }
+  
+  /* Problem Selection */
+  .problem-selection {
+    background: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  .problem-selection h2 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+  .filter-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+  }
+  .filter-group label {
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+  }
+  .filter-group select,
+  .filter-group input {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  .filter-btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .filter-btn:hover {
+    background-color: #2d80b7;
+  }
+  .problem-list table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .problem-list th,
+  .problem-list td {
+    text-align: left;
+    padding: 0.75rem;
+    border-bottom: 1px solid #ddd;
+  }
+  .problem-list thead th {
+    background: #f0f0f0;
+  }
+  .submit-problem-selection {
+    margin-top: 1rem;
+    text-align: right;
+  }
+  .add-problems-btn {
+    background-color: #00b894;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .add-problems-btn:hover {
+    background-color: #019373;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 1rem;
+  }
+  .footer p {
+    color: #fff;
+    font-size: 0.9rem;
+  }
+  

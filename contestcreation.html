@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CP Arena - Create Contest</title>
+
+  <!-- Example Google Font (Optional) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+
+  <!-- Link to external CSS (or you can place CSS in <style> tag below) -->
+  <link rel="stylesheet" href="contestcreation.css" />
+</head>
+<body>
+  <!-- HEADER / NAVBAR -->
+  <header class="navbar">
+    <div class="navbar-brand">CP Arena</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Sign In</a></li>
+        <li><a href="#" class="sign-up-btn">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="contest-creation-section">
+    <section class="creation-form-wrapper">
+      <h1>Create a New Contest</h1>
+      <form class="contest-creation-form">
+        <!-- Contest Name -->
+        <div class="form-group">
+          <label for="contestName">Contest Name</label>
+          <input type="text" id="contestName" name="contestName" placeholder="Enter contest title" required />
+        </div>
+
+        <!-- Private/Public Toggle -->
+        <div class="form-group toggle-group">
+          <label>Contest Visibility</label>
+          <div class="toggle-options">
+            <div>
+              <input type="radio" id="public" name="visibility" value="public" checked />
+              <label for="public">Public</label>
+            </div>
+            <div>
+              <input type="radio" id="private" name="visibility" value="private" />
+              <label for="private">Private</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Start Date & Time -->
+        <div class="form-group">
+          <label for="startTime">Start Date &amp; Time</label>
+          <input type="datetime-local" id="startTime" name="startTime" required />
+        </div>
+
+        <!-- Duration or End Date & Time -->
+        <div class="form-group">
+          <label for="duration">Duration (hours)</label>
+          <input type="number" id="duration" name="duration" min="1" max="240" value="2" required />
+        </div>
+
+        <!-- (Optional) End Date & Time
+        <div class="form-group">
+          <label for="endTime">End Date &amp; Time</label>
+          <input type="datetime-local" id="endTime" name="endTime" />
+        </div>
+        -->
+
+        <!-- Submit Button -->
+        <div class="form-group">
+          <button type="submit" class="create-btn">Create Contest</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Problem Selection & Browsing -->
+    <section class="problem-selection">
+      <h2>Select Problems</h2>
+      <div class="filter-section">
+        <div class="filter-group">
+          <label for="difficulty">Difficulty</label>
+          <select id="difficulty" name="difficulty">
+            <option value="">All</option>
+            <option value="800-1200">800-1200</option>
+            <option value="1201-1600">1201-1600</option>
+            <option value="1601-2000">1601-2000</option>
+            <option value="2001-2400">2001-2400</option>
+            <option value="2401+">2401+</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="tags">Tags</label>
+          <input type="text" id="tags" name="tags" placeholder="e.g. dp, math" />
+        </div>
+        <button class="filter-btn">Filter</button>
+      </div>
+
+      <!-- Placeholder table for problems fetched from Codeforces or your DB -->
+      <div class="problem-list">
+        <table>
+          <thead>
+            <tr>
+              <th>Select</th>
+              <th>Problem Name</th>
+              <th>Difficulty</th>
+              <th>Tags</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox" name="problem1" /></td>
+              <td>A. Helpful Math</td>
+              <td>800</td>
+              <td>implementation, sorting</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="problem2" /></td>
+              <td>B. Two Buttons</td>
+              <td>1200</td>
+              <td>greedy, bfs</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="problem3" /></td>
+              <td>C. Lucky Sum</td>
+              <td>1600</td>
+              <td>bitmasks, brute force</td>
+            </tr>
+            <!-- More rows dynamically generated from your API or DB -->
+          </tbody>
+        </table>
+      </div>
+      <!-- Button to confirm problem selection -->
+      <div class="submit-problem-selection">
+        <button class="add-problems-btn">Add Selected Problems</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 CP Arena. All rights reserved.</p>
+  </footer>
+</body>
+</html>

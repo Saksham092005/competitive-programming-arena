@@ -6,13 +6,14 @@
   }
   body {
     font-family: 'Inter', sans-serif;
-    background: #f5f7fa; /* Fallback background color */
+    background: linear-gradient(to right, #f8f9fa, #afc6dd); 
     color: #333;
+
   }
   
   /* Navbar */
   .navbar {
-    background-color: #1f1f1f; /* Dark header */
+    background-color: #24292e; /* Dark grey */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -43,7 +44,7 @@
   /* Main Profile Section */
   .profile-section {
     /* Optional subtle gradient (left to right) */
-    background: linear-gradient(to right, #f7f9fc, #ffffff);
+    background: linear-gradient(to right, #f8f9fa, #afc6dd); 
     min-height: 80vh;
     padding: 2rem;
     display: flex;
